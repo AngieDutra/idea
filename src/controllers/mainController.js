@@ -12,6 +12,20 @@ const mainController = {
         }catch (error) {
             throw error;
         }
+    },
+    register: async (req, res) => {
+        try {
+            res.render('register')
+        }catch (error) {
+            throw error;
+        }
+    },
+    ballot: async (req, res) => {
+        try {
+            res.render('ballot')
+        }catch (error) {
+            throw error;
+        }
     }
         
 };

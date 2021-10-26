@@ -1,0 +1,78 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+/* top ballot */
+.containeryellow1, .containeryellow2{
+    background-color: #F5E200;
+    width:100%;
+}
+.containeryellow1{
+    height: 100px;
+}
+.detail{
+    background-color: black;
+    color: white;
+    width: 20vw;
+    height: 60px;
+    text-align: center;
+    margin: 20px;
+    float: left;
+}
+h3{
+    padding-top: 20px;
+}
+.detail + h2{
+    float:right;
+    margin: 20px;
+    margin-top: 55px;
+}
+
+/* bottom ballot */
+.containeryellow2{
+    margin-top: 300px;
+    height: 500px
+}
+.name, .surname, .phrase1, .phrase2{
+    margin-left: 50px;
+}
+.name{
+    padding-top: 70px;
+    font-size: 3rem;
+}
+.surname{
+    font-size: 4rem;
+}
+.phrase1{
+    padding-top: 25px;
+}
+
+/* buttons */
+#cancel, #print{
+    width: 15vw;
+    height: 5vh;
+    background-color: #000;
+    color: #fff;
+    font-size:1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #000;
+}
+#print{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+#cancel{
+    position: absolute;
+    bottom: 70px;
+    right: 15px;
+}
+#cancel:hover, #print:hover{
+    background-color:dimgrey;
+    border-color:dimgrey;
+    cursor:pointer;
+}

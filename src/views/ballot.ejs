@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Estilos -->
+    <% styles.forEach(style => { %>
+        <link rel="stylesheet" href="/css/<%= style %> ">
+    <% }) %>
+    <link rel="stylesheet" href="/css/ballot.css">
+
+    <title>Ballot</title>
+</head>
+<body>
+    <div class="containeryellow1">
+        <section class="detail">
+            <h3>180 LISTA A</h3>
+        </section>
+        <h2>JUNTOS POR EL CAMBIO</h2>
+    </div>
+    <!-- imagen -->
+    <div class="containeryellow2">
+        <h1 class="name">Nombre</h1>
+        <h1 class="surname">Apellido</h1>
+        <h2 class="phrase1">PRECANDIDATO A PRESIDENTE DE</h2>
+        <h2 class="phrase2">LA NACIÓN</h2>
+    </div>
+    <form action="/start" method="GET">
+        <button type="submit" name="cancel" id="cancel">Cancelar</button>
+        <button type="submit" name="print" id="print">Imprimir</button>
+    </form>
+
+</body>
+</html>

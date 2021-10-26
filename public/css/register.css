@@ -1,0 +1,42 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* form */
+label{
+    font-size: 1.75rem;
+    display: inline-block;
+    margin-bottom: 5px;
+    width: 100%;
+}
+input,
+textarea,
+select{
+    font-size: 1rem;
+    background-color: #ccc;
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 1rem 1rem;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* button */
+#continue{
+    width: 90vw;
+    height: 10vh;
+    background-color: #000;
+    color: #fff;
+    font-size:2rem;
+    border-radius: 0.25rem;
+    border: 1px solid #000;
+}
+#continue:hover{
+    background-color:dimgrey;
+    border-color:dimgrey;
+    cursor:pointer;
+}
