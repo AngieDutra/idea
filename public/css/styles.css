@@ -3,12 +3,3 @@
     padding: 0;
     margin: 0;
 }
-/***************** ETIQUETAS *******************/
-body {
-    width: 100vw;
-    height: 100vh;
-    border: 5px solid #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}

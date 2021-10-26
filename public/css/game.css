@@ -1,0 +1,30 @@
+form{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap: wrap;
+}
+label{
+    width: 90%;
+}
+i{
+    font-size:2rem;
+}
+.yellow, .blue{
+    width: 40%;
+    height:fit-content;
+    padding: 5px;
+    border: 2px solid #000;
+    border-radius:5px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.yellow{
+    background-color: #F5E200;
+}
+.blue{
+    background-color: #01B8F0;
+}

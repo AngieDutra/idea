@@ -7,11 +7,12 @@
     <% styles.forEach(style => { %>
         <link rel="stylesheet" href="/css/<%= style %> ">
     <% }) %>
+    <link rel="stylesheet" href="/css/start.css">
     <title>Home</title>
 </head>
 <body>
     <form action="/game" method="GET">
-        <button type="submit" name="empezar">Empezar :)</button>
+        <button type="submit" name="begin" id="begin">Empezar :)</button>
     </form>
 </body>
 </html>
