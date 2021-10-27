@@ -12,6 +12,6 @@ router.get('/game',mainController.game);
 router.get('/register',mainController.register);
 
 //Ballot
-router.get('/ballot',mainController.ballot);
+router.post('/ballot',mainController.ballot);
 
 module.exports = router;

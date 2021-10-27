@@ -12,6 +12,9 @@ label{
 i {
     font-size:2rem;
 }
+figure {
+    transition: transform 10s linear;
+}
 img{
     width: 50px;
 }
@@ -30,4 +33,7 @@ img{
 }
 .blue{
     background-color: #01B8F0;
+}
+.photographer{
+    transform: translate(975px);
 }
