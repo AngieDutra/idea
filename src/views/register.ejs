@@ -13,9 +13,24 @@
     <% }) %>
     <link rel="stylesheet" href="/css/register.css">
 
+    <!-- Creditos a Dani -->
+    <!-- Script de captura -->
+    <script src="/js/register.js"></script>
+
     <title>Register</title>
 </head>
 <body>
+    <div class="camera">
+        <video id="video">Video stream not available.</video>
+        <button id="startbutton"><i class="fas fa-camera"></i></button> 
+    </div>
+
+    <canvas id="canvas">
+    </canvas>
+
+    <div class="output">
+        <img id="photo" alt="The screen capture will appear in this box."> 
+    </div>
 
     <form action="/ballot" method="post">
         <section class="field">
@@ -26,5 +41,9 @@
         <button type="submit" name="continue" id="continue">Continuar</button>    
     </form>
 
+    <!-- Creditos a Stanko -->
+    <!--<video id="video" playsinline crossorigin="anonymous"></video>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/register.js"></script>-->
 </body>
 </html>
