@@ -13,10 +13,31 @@ i {
     font-size:2rem;
 }
 figure {
-    transition: transform 10s linear;
+    transition: transform 15s linear;
 }
 img{
     width: 50px;
+}
+#photographer{
+    transform: translate(975px);
+}
+.timeLine{
+    height: 5px;
+    background: #ff0000;
+}
+/* Esconde y muestra boton para finalizar juego */
+.hide{
+    display: none;
+    visibility: hidden;
+    overflow: hidden;
+}
+.show{
+    background-color: #000;
+    color: #fff;
+}
+/* Deshabilita opciones */
+.disabled{
+    pointer-events: none;
 }
 .yellow, .blue{
     width: 40%;
@@ -33,7 +54,4 @@ img{
 }
 .blue{
     background-color: #01B8F0;
-}
-.photographer{
-    transform: translate(975px);
 }
