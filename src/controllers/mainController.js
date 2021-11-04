@@ -32,7 +32,7 @@ const mainController = {
     },
     ballot: async (req, res) => {
         try {
-            res.render('ballot', {user})
+            res.render('ballot', {user})//modelo ??
         }catch (error) {
             throw error;
         }

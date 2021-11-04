@@ -13,21 +13,17 @@
     <% }) %>
     <link rel="stylesheet" href="/css/register.css">
 
-    <!-- Creditos a Dani -->
-    <!-- Script de captura -->
-    <script src="/js/register.js"></script>
 
     <title>Register</title>
 </head>
 <body>
-    <div class="camera">
+    <section class="camera">
         <video id="video">Video stream not available.</video>
         <button id="takePic"><i class="fas fa-camera"></i></button> 
-    </div>
+    </section>
 
     <canvas id="canvas">
     </canvas>
-
 
     <form action="/ballot" method="post">
         <section class="field">
@@ -40,6 +36,9 @@
         </section>
         <button type="submit" name="continue" id="continue">Continuar</button>    
     </form>
+    <!-- Creditos a Dani -->
+    <!-- Script de captura -->
+    <script src="/js/register.js"></script>
 
     <!-- Creditos a Stanko -->
     <!--<video id="video" playsinline crossorigin="anonymous"></video>

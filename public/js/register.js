@@ -14,7 +14,7 @@ $video.play()
     // width to the value defined here, but the height will be
     // calculated based on the aspect ratio of the input stream.
   
-    var width = 320;    // We will scale the photo width to this
+    var width = 240;    // We will scale the photo width to this
     var height = 0;     // This will be computed based on the input stream
   
     // |streaming| indicates whether or not we're currently streaming
@@ -46,13 +46,13 @@ $video.play()
   
       video.addEventListener('canplay', function(ev){
         if (!streaming) {
-          height = video.videoHeight / (video.videoWidth/width);
+          height = 320;
         
           // Firefox currently has a bug where the height can't be read from
           // the video, so we will make assumptions if this happens.
         
           if (isNaN(height)) {
-            height = width / (4/3);
+            height = 320;
           }
         
           video.setAttribute('width', width);
