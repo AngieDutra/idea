@@ -1,3 +1,5 @@
+const user = require('../models/user');
+
 const mainController = {
     start: async (req, res) => {
         try {
@@ -20,9 +22,17 @@ const mainController = {
             throw error;
         }
     },
+    createUser: async (req, res) => {
+        try {
+            console.log(req.file)
+            res.redirect('ballot')
+        }catch (error) {
+            throw error;
+        }
+    },
     ballot: async (req, res) => {
         try {
-            res.render('ballot')
+            res.render('ballot', {user})
         }catch (error) {
             throw error;
         }

@@ -12,6 +12,9 @@ app.listen(app.get('port'), ()=> console.log('Server en http://localhost:' + app
 // Settings
     // Public folder
 app.use(express.static(path.resolve(__dirname, '../public'))); 
+    //URL
+app.use(express.urlencoded({extended:false}));
+app.use(express.json());
     // Views folder
 app.set("views", path.resolve(__dirname, "./views"));
     // View Engine

@@ -64,7 +64,7 @@ input, textarea, select{
     flex-direction: column;
   }
   
-  #startbutton {
+  #takePic, #savePic{
     font-size: 1.5rem;
     width:fit-content;
     padding: 20px;
@@ -72,7 +72,13 @@ input, textarea, select{
     position: absolute;
     top: 30vh;
   }
-  
+
+  .hide{
+    display: none;
+    visibility: hidden;
+    overflow: hidden;
+  }
+
   .contentarea {
     font-size: 16px;
     font-family: "Lucida Grande", "Arial", sans-serif;

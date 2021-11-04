@@ -28,13 +28,13 @@ $video.play()
     var video = null;
     var canvas = null;
     var photo = null;
-    var startbutton = null;
+    var takePic = null;
   
     function startup() {
       video = document.getElementById('video');
       canvas = document.getElementById('canvas');
       photo = document.getElementById('photo');
-      startbutton = document.getElementById('startbutton');
+      takePic = document.getElementById('takePic');
   
       navigator.mediaDevices.getUserMedia({video: true, audio: false})
       .then(function(stream) {
@@ -42,7 +42,6 @@ $video.play()
         video.play();
       })
       .catch(function(err) {
-        console.log("An error occurred: " + err);
       });
   
       video.addEventListener('canplay', function(ev){
@@ -64,11 +63,10 @@ $video.play()
         }
       }, false);
   
-      startbutton.addEventListener('click', function(ev){
+      takePic.addEventListener('click', function(ev){
         takepicture();
         ev.preventDefault();
-      }, false);
-      
+      }, false);      
       clearphoto();
     }
   
@@ -77,7 +75,7 @@ $video.play()
   
     function clearphoto() {
       var context = canvas.getContext('2d');
-      context.fillStyle = "#AAA";
+      context.fillStyle = "#000";
       context.fillRect(0, 0, canvas.width, canvas.height);
   
       var data = canvas.toDataURL('image/png');
@@ -90,7 +88,7 @@ $video.play()
     // drawing that to the screen, we can change its size and/or apply
     // other changes before drawing it.
   
-    function takepicture() {
+    function takepicture(req, res, next) {
       var context = canvas.getContext('2d');
       if (width && height) {
         canvas.width = width;
@@ -99,11 +97,11 @@ $video.play()
       
         var data = canvas.toDataURL('image/png');
         photo.setAttribute('src', data);
+        data = 'foto.png';
       } else {
         clearphoto();
       }
     }
-  
     // Set up our event listener to run the startup process
     // once loading is complete.
     window.addEventListener('load', startup, false);
