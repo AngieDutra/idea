@@ -104,7 +104,9 @@ img{
 }
 .darkBlue{
     background-color: hsl(231, 100%, 27%);
+    color:#fff;
 }
 .red{
-    background-color: hsl(0, 100%, 42%)
+    background-color: hsl(0, 100%, 42%);
+    color:#fff;
 }
