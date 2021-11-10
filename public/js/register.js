@@ -29,12 +29,16 @@ $video.play()
     var canvas = null;
     var photo = null;
     var takePic = null;
+    
+    var foto = null;
   
     function startup() {
       video = document.getElementById('video');
       canvas = document.getElementById('canvas');
       photo = document.getElementById('photo');
       takePic = document.getElementById('takePic');
+
+      foto = document.getElementById('foto');
   
       navigator.mediaDevices.getUserMedia({video: true, audio: false})
       .then(function(stream) {
@@ -87,7 +91,7 @@ $video.play()
     // drawing that to the screen, we can change its size and/or apply
     // other changes before drawing it.
   
-    function takepicture(req, res, next) {
+    function takepicture() {
       var context = canvas.getContext('2d');
       if (width && height) {
         canvas.width = width;
@@ -96,7 +100,7 @@ $video.play()
       
         var data = canvas.toDataURL('image/png');
         photo.setAttribute('src', data);
-        data = 'foto.png';
+        /*foto.value = data;*/
       } else {
         clearphoto();
       }

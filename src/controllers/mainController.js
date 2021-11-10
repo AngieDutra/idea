@@ -25,15 +25,8 @@ const mainController = {
     },
     createUser: async (req, res) => {
         try {
-            console.log(req.file)
-            res.redirect('ballot')
-        }catch (error) {
-            throw error;
-        }
-    },
-    ballot: async (req, res) => {
-        try {
-            res.render('ballot', {user})//modelo ??
+            user.create(req.body);
+            res.render('ballot', {data: user.all()})
         }catch (error) {
             throw error;
         }

@@ -12,22 +12,21 @@
         <link rel="stylesheet" href="/css/<%= style %> ">
     <% }) %>
     <link rel="stylesheet" href="/css/ballot.css">
-    <script src="/js/register.js"></script>
 
     <title>Ballot</title>
 </head>
 <body>
-
+    <% data.forEach(dato => { %>
     <section class="containeryellow1">
         <section class="detail">
             <h3>180 LISTA A</h3>
         </section>
         <h2>JUNTOS A POR CAMBIO</h2>
     </section>
-    <img id="foto" src="img/foto_candidato.jpg" alt="foto candidato">
+    <img id="foto" src=<%= dato.picture %> alt="foto candidato">
     <section class="containeryellow2">
-        <h1 class="name">Nombre</h1>
-        <h1 class="surname">Apellido</h1>
+        <h1 class="name"><%= dato.name %></h1>
+        <h1 class="surname"><%= dato.surname %></h1>
         <h2 class="phrase1">PRECANDIDATO A PRESIDENTE DE</h2>
         <h2 class="phrase2">LA NACIÓN</h2>
     </section>
@@ -35,6 +34,6 @@
         <button type="submit" name="cancel" id="cancel">Cancelar</button>
         <button type="submit" name="print" id="print">Imprimir</button>
     </form>
-
+    <% }) %>
 </body>
 </html>

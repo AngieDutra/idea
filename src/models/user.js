@@ -27,16 +27,22 @@ const user = {
         fs.writeFileSync(directory, newUserList);
         return true
     },
-    create: (newData, imgFile)=>{
+    create: (newData)=>{
         let users = user.all();
         let newId = users.length > 0? users[users.length-1].id +1 : 1
-        let newUser = {
+
+        /*let picture = document.getElementById('picture');
+        let foto = newData.foto;
+        picture.setAttribute('src', foto);
+        console.log(picture);*/
+
+        let newUser = [{
             id: newId,
             name: newData.name,
-            pic: imgFile == undefined ? 'default-user.jpg' : imgFile.filename
-        }
-        users.push(newUser);
-        if(user.write(users) == true){
+            surname: newData.surname,
+            picture: "img/foto_candidato.jpg"
+        }]
+        if(user.write(newUser) == true){
             return true
         }
     }
