@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <% styles.forEach(style => { %>
         <link rel="stylesheet" href="/css/<%= style %> ">
     <% }) %>
@@ -11,21 +14,29 @@
     <title>Home</title>
 </head>
 <body>
-    <article>
-        <section class="presentation">
-            <h2>¿Alguna vez pensaste en por qué elegimos a nuestros candidatos?</h2>
-            <h2>¿Lo elijo porque apoyo y estoy de acuerdo con sus promesas y valores?</h2>
-            <h2>¿O simplemente porque pertenece al partido electoral de mi preferencia?</h2>
-            <h2>Averigüémoslo:</h2>
+    <article id="intro">
+        <h2>Idea vs Idea</h2>
+        <section>
+            <article class="presentation">
+                <p>¿Por qué elegimos a les candidates presidenciales?</p>
+                <p>¿Le elijo porque estoy de acuerdo con sus propuestas?</p>
+                <p>¿O porque provienen de nuestro partido predilecto?</p>
+                <p>Si fueras a postularte, ¿qué tipo de candidate serias?</p>
+                <p>¿Pertenecerías al partido que tenés en mente?
+                <p>Averigüémoslo...</p>
+            </article>
+            <article class="instructions">
+                <h3>Consignas:</h3>
+                <p>1. Apretá el botón “Empezar”.</p>
+                <p>2. Elegí las frases con las que te sientas más identificade.</p>
+                <p class="warning">Ojo: ¡Hay un limite de tiempo de 40 segundos!</p>
+                <p>3. Al finalizar sacate una foto e ingresá tu nombre completo.</p>
+                <p class="warning">Spoiler: ¡Podrás llevarte el resultado a casa!</p>
+            </article>
         </section>
-        <section class="instructions">
-            <h3>Consignas:</h3>
-            <h3>1. Apretá el botón “Empezar”.</h3>
-            <h3>2. Elegí las frases con las que te sientas más identificadx. Hay un límite de 
-                tiempo, así que selecciona rápido y seguí tu instinto.</h3>
-            <h3>3. Sacate una foto y rellena con tu nombre completo. Apretá el botón “Continuar”.</h3>
+        <section>
+            <a href="/game">Empezar :)</a>
         </section>
-        <a href="/game" id="begin">Empezar :)</a>
     </article>
 </body>
 </html>
