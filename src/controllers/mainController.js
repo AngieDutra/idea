@@ -1,4 +1,5 @@
 const user = require('../models/user');
+const quote = require('../models/quote');
 
 const mainController = {
     start: async (req, res) => {
@@ -10,7 +11,7 @@ const mainController = {
     },
     game: async (req, res) => {
         try {
-            res.render('game')
+            res.render('game', {list: quote.all()})
         }catch (error) {
             throw error;
         }

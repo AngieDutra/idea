@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "userName": "Angie",
+        "quotes_id": [2, 4]
+    },{
+        "id": 2,
+        "userName": "Male",
+        "quotes_id": [4]
+    },{
+        "id": 3,
+        "userName": "Rena",
+        "quotes_id": [1, 3]
+    }
+]

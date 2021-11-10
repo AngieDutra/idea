@@ -23,36 +23,29 @@
         <section class="timeCount">15</section>
     </article>
     <form method="GET" action="/register">
-        <section class="yellow">
-            <input type="checkbox" name="promesa" id="promesa">
-            <label>“Soy un activista de ponerle fin a la penalización del aborto. Va a haber un proyecto de ley mandado por el presidente”</label>
-        </section>
-        <section class="blue">
-            <input type="checkbox" name="promesa" id="promesa">
-            <label>“Propongo que tengamos (..) ley del arrepentido.”</label>
-        </section>
-        <section class="blue">
-            <input type="checkbox" name="promesa" id="promesa">
-            <label>“Quiero trabajar para que (...) la asignación no sólo continúe, sino que se extienda a todos, incluyendo a los hijos de monotributistas.”</label>
-        </section>
-        <section class="yellow">
-            <input type="checkbox" name="promesa" id="promesa">
-            <label>“Vamos a crear el Ministerio de la Mujer, de Igualdad y de la Diversidad para que de una vez y para siempre los argentinos entremos al siglo XXI y no haya leyes y reglas para unos y para otros. La ley es igual para todos, los distintos somos las personas”</label>
-        </section>
-        <section class="blue">
-            <input type="checkbox" name="promesa" id="promesa">
-            <label>“Es, primero, programación y robótica desde sala de 5 en todas las escuelas de la Ciudad. Es el lenguaje del futuro.”
-            </label>
-        </section>
-        <section class="yellow">
-            <input type="checkbox" name="promesa" id="promesa">
-            <label>“Vamos a crear el Ministerio de la Mujer, de Igualdad y de la Diversidad para que de una vez y para siempre los argentinos entremos al siglo XXI y no haya leyes y reglas para unos y para otros. La ley es igual para todos, los distintos somos las personas”</label>
-        </section>
-        <section class="blue">
-            <input type="checkbox" name="promesa" id="promesa">
-            <label>“Hoy un colectivo tarda aproximadamente 75 minutos o más para ir desde Saénz hasta Palermo. Con la implementación del nuevo Metrobus Transversal el tiempo de viaje se reduce a 30 minutos.”
-            </label>
-        </section>
+        <% list.forEach(promise => { %>
+            <% if(promise.color_id == 1) { %>
+            <section class="yellow">
+                <input type="checkbox" name="promesa" id="promesa">
+                <label><%= promise.cita %></label>
+            </section>
+            <% } else if(promise.color_id == 2) { %>
+            <section class="blue">
+                <input type="checkbox" name="promesa" id="promesa">
+                <label><%= promise.cita %></label>
+            </section>
+            <% }  if(promise.color_id == 3) { %>
+            <section class="red">
+                <input type="checkbox" name="promesa" id="promesa">
+                <label><%= promise.cita %></label>
+            </section>
+            <% } else if(promise.color_id == 4) { %>
+            <section class="darkBlue">
+                <input type="checkbox" name="promesa" id="promesa">
+                <label><%= promise.cita %></label>
+            </section>
+            <% } %>
+        <% }) %>
         <button type="submit" name="endGame" id="endGame" class="endGame hide">Guardar respuestas</button>
     </form>
     <script src="/js/game.js"></script>
