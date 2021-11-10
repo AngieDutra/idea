@@ -3,16 +3,11 @@ body{
 }
 form{
     width: 90%;
-    height: 70%;
+    height: 80%;
     border: 1px solid #fff;
     box-shadow: 0 0 15px 5px #fff;
     border-radius: 20px;
     margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
     overflow: scroll;
 }
 form section{
@@ -20,28 +15,59 @@ form section{
     border: 2px solid #000;
     border-radius:5px;
     padding: 20px;
+    margin: 10px auto;
     display: flex;
     align-items: center;
 }
 label{
     padding-left: 20px;
 }
-label, .timer{
-    font-size: 1.5rem;
-}
-i {
-    font-size:2rem;
+label{
+    font-size: 1.75rem;
 }
 figure {
-    position:relative;
-    left: 0;
-    transition: transform 40s linear;
+    width:90%;
+    margin: 0 auto;
 }
 img{
-    width: 10%;
+    width: 100px;
+    transition: transform 40s linear;
+    transform: translate(830px);
 }
-#photographer{
-    transform: translate(920px);
+.timer{
+    width: 90%;
+    height: 5%;
+    font-size:1.75rem;
+    background-color: hsl(0, 0%, 78%);
+    border-radius: 15px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.cuentaNumero{
+    width: 90%;
+    position: absolute;
+    top:2.5%;
+    display: flex;
+    justify-content:center;
+}
+.cuentaNumero p:first-child{
+    padding-right: 10px;
+}
+.timeLine{
+    position: relative;
+    left: 0;
+    height:100%;
+    background: #ff0000;
+}
+/* Esconde y muestra boton para finalizar juego */
+.hide{
+    display: none;
+    visibility: hidden;
+    overflow: hidden;
+}
+.show{
+    background-color: #000;
+    color: #fff;
 }
 .endGame{
     position: absolute;
@@ -49,7 +75,7 @@ img{
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: hsla(0, 0%, 61%, 0.342);
+    background-color: hsl(0, 0%, 0%)
 }
 .fin{
     width: 50%;
@@ -65,33 +91,6 @@ img{
 .fin:focus{
     outline: 2px solid #fff;
     outline-offset: 3px;
-}
-.timeLine{
-    height: 2%;
-    background: #ff0000;
-}
-.timer{
-    width: 80%;
-    background-color: hsl(0, 0%, 78%);
-    border-radius: 10px;
-    margin: 40px auto;
-    padding: 20px;
-    border: 1px dotted hsl(0, 0%, 45%);
-    display: flex;
-    justify-content:center;
-}
-.timer p:first-child{
-    padding-right: 10px;
-}
-/* Esconde y muestra boton para finalizar juego */
-.hide{
-    display: none;
-    visibility: hidden;
-    overflow: hidden;
-}
-.show{
-    background-color: #000;
-    color: #fff;
 }
 /* Deshabilita opciones */
 .disabled{

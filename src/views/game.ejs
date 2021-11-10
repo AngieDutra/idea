@@ -20,14 +20,16 @@
     <title>Game</title>
 </head>
 <body>
-    <section class="timeLine"></section>
+    <article class="timer">
+        <section class="timeLine"></section>
+        <section class="cuentaNumero">
+            <p class="timeText">Tiempo restante:</p>
+            <p class="timeCount">40</p>
+        </section>
+    </article>
     <figure id="photographer">
         <img src="/img/photographer.png" alt="fotografo">
     </figure>
-    <article class="timer">
-        <p class="timeText">Tiempo restante:</p>
-        <p class="timeCount">40</p>
-    </article>
     <form method="GET" action="/register">
         <% list.forEach(promise => { %>
             <% if(promise.color_id == 1) { %>
