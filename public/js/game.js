@@ -3,7 +3,7 @@ window.addEventListener('load', ()=>{
     const timeText = document.querySelector('.timeText');
     const timeCount = document.querySelector('.timeCount');
 
-    let timeValue =  15;
+    let timeValue =  40;
     let counter;
     let counterLine;
     let widthValue = 0;
@@ -42,7 +42,7 @@ window.addEventListener('load', ()=>{
     function startTimerLine(time){
         counterLine = setInterval(timer, 29);
         function timer(){
-            time += 1.9; //upgrading time value with 1
+            time += 0.73; //upgrading time value with 1
             timeLine.style.width = time + "px"; //increasing width of time_line with px by time value
             if(time > 1024){ //if time value is greater than 549
                 clearInterval(counterLine); //clear counterLine

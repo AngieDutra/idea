@@ -7,6 +7,10 @@
     <!-- Font Awesome -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- Estilos -->
     <% styles.forEach(style => { %>
         <link rel="stylesheet" href="/css/<%= style %> ">
@@ -17,36 +21,40 @@
 </head>
 <body>
     <section class="timeLine"></section>
-    <figure id="photographer"><img src="/img/photographer.png" alt="fotografo"></figure>
+    <figure id="photographer">
+        <img src="/img/photographer.png" alt="fotografo">
+    </figure>
     <article class="timer">
-        <section class="timeText">Tiempo restante</section>
-        <section class="timeCount">15</section>
+        <p class="timeText">Tiempo restante:</p>
+        <p class="timeCount">40</p>
     </article>
     <form method="GET" action="/register">
         <% list.forEach(promise => { %>
             <% if(promise.color_id == 1) { %>
-            <section class="yellow">
-                <input type="checkbox" name="promesa" id="promesa">
-                <label><%= promise.cita %></label>
-            </section>
-            <% } else if(promise.color_id == 2) { %>
             <section class="blue">
                 <input type="checkbox" name="promesa" id="promesa">
                 <label><%= promise.cita %></label>
             </section>
+            <% } else if(promise.color_id == 2) { %>
+            <section class="yellow">
+                <input type="checkbox" name="promesa" id="promesa">
+                <label><%= promise.cita %></label>
+            </section>
             <% }  if(promise.color_id == 3) { %>
-            <section class="red">
+            <section class="darkBlue">
                 <input type="checkbox" name="promesa" id="promesa">
                 <label><%= promise.cita %></label>
             </section>
             <% } else if(promise.color_id == 4) { %>
-            <section class="darkBlue">
+            <section class="red">
                 <input type="checkbox" name="promesa" id="promesa">
                 <label><%= promise.cita %></label>
             </section>
             <% } %>
         <% }) %>
-        <button type="submit" name="endGame" id="endGame" class="endGame hide">Guardar respuestas</button>
+        <section class="endGame hide">
+            <button type="submit" name="fin" id="fin" class="fin">Guardar respuestas</button>
+        </section>
     </form>
     <script src="/js/game.js"></script>
 </body>
