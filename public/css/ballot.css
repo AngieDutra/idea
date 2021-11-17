@@ -4,16 +4,10 @@ body {
     display: block;
     justify-content: center;
     align-items: center;
+    background-color: #F5E200;
 }
 
 /* top ballot */
-.containeryellow1, .containeryellow2{
-    background-color: #F5E200;
-    width:100%;
-}
-.containeryellow1{
-    height: 100px;
-}
 .detail{
     background-color: black;
     color: white;
@@ -31,14 +25,11 @@ h3{
     margin: 20px;
     margin-top: 55px;
 }
-
 img{
     width: 100%;
 }
+
 /* bottom ballot */
-.containeryellow2{
-    height: 500px
-}
 .name, .surname, .phrase1, .phrase2{
     margin-left: 100px;
 }

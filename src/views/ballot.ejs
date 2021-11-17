@@ -17,14 +17,16 @@
 </head>
 <body>
     <% data.forEach(dato => { %>
-    <section class="containeryellow1">
+    <section>
         <section class="detail">
             <h3>180 LISTA A</h3>
         </section>
         <h2>JUNTOS A POR CAMBIO</h2>
     </section>
-    <img id="foto" src=<%= dato.picture %> alt="foto candidato">
-    <section class="containeryellow2">
+    <picture>
+        <img id="foto" src=<%= dato.picture %> alt="foto candidato">    
+    </picture>
+    <section>
         <h1 class="name"><%= dato.name %></h1>
         <h1 class="surname"><%= dato.surname %></h1>
         <h2 class="phrase1">PRECANDIDATO A PRESIDENTE DE</h2>

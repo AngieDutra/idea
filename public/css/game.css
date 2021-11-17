@@ -26,15 +26,30 @@ label{
 label{
     font-size: 1.75rem;
 }
+input[type=checkbox]{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2.5); /* IE */
+  -moz-transform: scale(2.5); /* FF */
+  -webkit-transform: scale(2.5); /* Safari and Chrome */
+  -o-transform: scale(2.5); /* Opera */
+  transform: scale(2.5);
+}
 figure {
     width:90%;
     margin: 0 auto;
 }
 img{
     width: 100px;
-    transition: transform 40s linear;
-    transform: translate(830px);
+    /*transition: transform 180s linear;
+    transform: translate(830px);*/
+    animation: photographer 182s linear 1;
 }
+
+@keyframes photographer{ 
+  0%   {transform: translate(0px)}
+  100% {transform: translate(830px)}
+}
+
 .timer{
     width: 90%;
     height: 5%;
