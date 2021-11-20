@@ -39,9 +39,9 @@ window.addEventListener('load', ()=>{
     }
 
     function startTimerLine(time){
-        counterLine = setInterval(timer, 180); // ARREGLAR VALORES
+        counterLine = setInterval(timer, 185); // ARREGLAR VALORES
         function timer(){
-            time += 0.99; //upgrading time value with 1
+            time += 0.94; //upgrading time value with 1
             timeLine.style.width = time + "px"; //increasing width of time_line with px by time value
             if(time > 1024){ //if time value is greater than 549
                 clearInterval(counterLine); //clear counterLine

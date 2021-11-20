@@ -1,15 +1,19 @@
 [
     {
         "id" : 1,
-        "color" : "yellow"
+        "color" : "yellow",
+        "partido": "JUNTOS A POR CAMBIO"
     },{
         "id" : 2,
-        "color" : "blue"
+        "color" : "blue",
+        "partido" : "FRENTE PARA TODOS"
     },{
         "id" : 3,
-        "color" : "red"
+        "color" : "red",
+        "partido": "UNIÓN RADICAL DE CIVILES"
     },{
         "id" : 4,
-        "color" : "darkBlue"
+        "color" : "darkBlue",
+        "partido" : "PARTIDO DE LA JUSTICIA"
     }
 ]

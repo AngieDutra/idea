@@ -22,8 +22,6 @@ form section{
 }
 label{
     padding-left: 20px;
-}
-label{
     font-size: 1.75rem;
 }
 input[type=checkbox]{
@@ -114,16 +112,16 @@ img{
     pointer-events: none;
 }
 .yellow{
-    background-color: hsl(55, 100%, 48%);
+    background-color: #f5e000;
 }
 .blue{
-    background-color: hsl(194, 99%, 47%);
+    background-color: #01b7ef;
 }
 .darkBlue{
-    background-color: hsl(231, 100%, 27%);
+    background-color: #00158a;
     color:#fff;
 }
 .red{
-    background-color: hsl(0, 100%, 42%);
+    background-color: #d60000;
     color:#fff;
 }

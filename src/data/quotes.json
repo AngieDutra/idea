@@ -2,62 +2,77 @@
     {
         "id" : 1,
         "cita" : "“Soy un activista de ponerle fin a la penalización del aborto. Va a haber un proyecto de ley mandado por el presidente”",
-        "color_id" : 2
+        "color_id" : 2,
+        "check": false
     },{
         "id" : 2,
         "cita" : "“(...) precauciones para que la recuperación de ese territorio argentino (Islas Malvinas) no se frustre mediante una forzada independencia, que jamás reconoceremos.”",
-        "color_id" : 3
+        "color_id" : 3,
+        "check": false
     },{
         "id" : 3,
         "cita" : "“Propongo que tengamos (..) ley del arrepentido.”",
-        "color_id" : 1
+        "color_id" : 1,
+        "check": false
     },{
         "id" : 4,
         "cita" : "“Vamos a crear el Ministerio de la Mujer, de Igualdad y de la Diversidad para que de una vez y para siempre los argentinos entremos al siglo XXI y no haya leyes y reglas para unos y para otros. La ley es igual para todos, los distintos somos las personas”",
-        "color_id" : 2
+        "color_id" : 2,
+        "check": false
     },{
         "id" : 5,
         "cita" : "“A la juventud, no debe adulársela; deben presentársele los problemas, con claridad y seriedad y, sobre todo, lejos de todo intento, que 'huela' a trampa.”",
-        "color_id" : 3
+        "color_id" : 3,
+        "check": false
     },{
         "id" : 6,
         "cita" : "“El Gobierno, el Estado y las organizaciones del Pueblo deben promover la nacionalización de los servicios públicos, sin que ello importe su estatización.”",
-        "color_id" : 4
+        "color_id" : 4,
+        "check": false
     },{
         "id" : 7,
         "cita" : "“Quiero trabajar para que (...) la asignación no sólo continúe, sino que se extienda a todos, incluyendo a los hijos de monotributistas.”",
-        "color_id" : 1
+        "color_id" : 1,
+        "check": false
     },{
         "id" : 8,
         "cita" : "“La tierra es un bien individual en función social. Debe ser considerada bien de trabajo y no de renta o especulación. El Gobierno, el Estado y las organizaciones del Pueblo han de promover el acceso a la propiedad de la tierra por quienes la trabajan.”",
-        "color_id" : 4
+        "color_id" : 4,
+        "check": false
     },{
         "id" : 9,
         "cita" : "“Salarios justos, viviendas dignas y techo para todos; derecho a la salud firmemente garantizado.”",
-        "color_id" : 3
+        "color_id" : 3,
+        "check": false
     },{
         "id" : 10,
-        "cita" : "“Me ocuparé de sacarla las rejas a la Plaza de Mayo: que vayan, la disfruten, se quejen. Es la plaza de todos.”",
-        "color_id" : 2
+        "cita" : "“Me ocuparé de sacar las rejas a la Plaza de Mayo: que vayan, la disfruten, se quejen. Es la plaza de todos.”",
+        "color_id" : 2,
+        "check": false
     },{
         "id" : 11,
         "cita" : "“Los niños, que constituyen la comunidad del porvenir, vale decir, la Patria del futuro, son los únicos privilegiados, sus derechos deben ser protegidos, consolidados y desarrollados por el Gobierno, el Estado y las organizaciones del Pueblo.”",
-        "color_id" : 4
+        "color_id" : 4,
+        "check": false
     },{
         "id" : 12,
         "cita" : "“Es, primero, programación y robótica desde sala de 5 en todas las escuelas de la Ciudad. Es el lenguaje del futuro.”",
-        "color_id" : 1
+        "color_id" : 1,
+        "check": false
     },{
         "id" : 13,
         "cita" : "“Hoy un colectivo tarda aproximadamente 75 minutos o más para ir desde Saénz hasta Palermo. Con la implementación del nuevo Metrobus Transversal el tiempo de viaje se reduce a 30 minutos.”",
-        "color_id" : 1
+        "color_id" : 1,
+        "check": false
     },{
         "id" : 14,
-        "cita" : "“La necesidad de expandir al máximo las exportaciones argentinas como fuerza dinámica e impulsora para un crecimiento económico sostenido.”",
-        "color_id" : 3
+        "cita" : "“La necesidad es expandir al máximo las exportaciones argentinas como fuerza dinámica e impulsora para un crecimiento económico sostenido.”",
+        "color_id" : 3,
+        "check": false
     },{
         "id" : 15,
         "cita" : "“Dividimos al país en dos categorías: una, la de los hombres que trabajan, y la otra, la que vive de los hombres que trabajan. Ante la situación, nos hemos colocado abiertamente del lado de los que trabajan.”",
-        "color_id" : 4
+        "color_id" : 4,
+        "check": false
     }
 ]

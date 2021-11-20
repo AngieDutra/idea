@@ -8,18 +8,6 @@ const user = {
         const list = JSON.parse(file);
         return list;
     },
-    //Econtrar por "primary key"
-    findByPk: (id)=>{
-        let allUsers = user.all();
-        let userFound = allUsers.find(oneUser => oneUser.id === id);
-        return userFound;
-    },
-    //Econtrar por campo
-    findByField: (field, text)=>{
-        let allUsers = user.all();
-        let userFound = allUsers.find(oneUser => oneUser[field] === text);
-        return userFound;
-    },
     //Sobreescribe el array de usuarios
     write:(userList)=>{
         const directory = path.resolve(__dirname, '../data/users.json');
@@ -31,6 +19,7 @@ const user = {
         let users = user.all();
         let newId = users.length > 0? users[users.length-1].id +1 : 1
 
+        //Intento de guardar el dato de imagen
         /*let picture = document.getElementById('picture');
         let foto = newData.foto;
         picture.setAttribute('src', foto);
@@ -40,7 +29,7 @@ const user = {
             id: newId,
             name: newData.name,
             surname: newData.surname,
-            picture: "img/foto_candidato.jpg"
+            picture: "img/foto_candidato.jpg" //Si puedo almacenar el dato lo pondria acá
         }]
         if(user.write(newUser) == true){
             return true

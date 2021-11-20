@@ -9,7 +9,7 @@ router.get('/',mainController.start);
 router.get('/game',mainController.game);
 
 //Register
-router.get('/register',mainController.register);
+router.put('/register',mainController.register);
 
 //Ballot
 router.post('/ballot',mainController.createUser);

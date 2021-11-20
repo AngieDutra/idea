@@ -18,6 +18,7 @@ const mainController = {
     },
     register: async (req, res) => {
         try {
+            console.log(req.body); // Esto tendria que devolver el valor de cada checkbox checkeada
             res.render('register')
         }catch (error) {
             throw error;
@@ -26,7 +27,8 @@ const mainController = {
     createUser: async (req, res) => {
         try {
             user.create(req.body);
-            res.render('ballot', {data: user.all()})
+            res.render('ballot', {data: user.all(), datoCita: quote.all()}) 
+            //El dato de cita deberia poder utilizarlo para cambiar su color y contenido
         }catch (error) {
             throw error;
         }

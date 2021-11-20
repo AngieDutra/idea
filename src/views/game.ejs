@@ -30,27 +30,27 @@
     <figure id="photographer">
         <img src="/img/photographer.png" alt="fotografo">
     </figure>
-    <form method="GET" action="/register">
+    <form action="/register?_method=PUT" method="POST">
         <% list.forEach(promise => { %>
             <% if(promise.color_id == 1) { %>
             <section class="blue">
-                <input type="checkbox" name="promesa" id="promesa">
-                <label><%= promise.cita %></label>
+                <input type="checkbox" name="promesa<%= promise.id %>" id="promesa<%= promise.id %>" value="promesa<%= promise.id %>">
+                <label for="promesa<%= promise.id %>"><%= promise.cita %></label>
             </section>
             <% } else if(promise.color_id == 2) { %>
             <section class="yellow">
-                <input type="checkbox" name="promesa" id="promesa">
-                <label><%= promise.cita %></label>
+                <input type="checkbox" name="promesa<%= promise.id %>" id="promesa<%= promise.id %>">
+                <label for="promesa<%= promise.id %>"><%= promise.cita %></label>
             </section>
             <% }  if(promise.color_id == 3) { %>
             <section class="darkBlue">
-                <input type="checkbox" name="promesa" id="promesa">
-                <label><%= promise.cita %></label>
+                <input type="checkbox" name="promesa<%= promise.id %>" id="promesa<%= promise.id %>">
+                <label for="promesa<%= promise.id %>"><%= promise.cita %></label>
             </section>
             <% } else if(promise.color_id == 4) { %>
             <section class="red">
-                <input type="checkbox" name="promesa" id="promesa">
-                <label><%= promise.cita %></label>
+                <input type="checkbox" name="promesa<%= promise.id %>" id="promesa<%= promise.id %>">
+                <label for="promesa<%= promise.id %>"><%= promise.cita %></label>
             </section>
             <% } %>
         <% }) %>
